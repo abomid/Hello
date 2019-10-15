@@ -23,12 +23,6 @@ gmap.coloricon = "http://www.googlemapsmarkers.com/v1/%s/"
 
 
 
-for i in range(len(comp)):
-
-    if np.isnan(comp['latitude'].iloc[i]) or np.isnan(comp['longitude'].iloc[i]):
-        print("location of your company was not found")
-    else:
-        gmap.marker(comp['latitude'].iloc[i], comp['longitude'].iloc[i], 'cornflowerblue')
 
 #gmap.scatter(latitude[0:100], longitude[0:100], c='r', marker=True)
 #Your Google_API_Key   AIzaSyCrzaLijjGj9mJDTzDYNPC5I2arqodYSME
